@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: auto;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  font-size:20px;
+  color:green;
+}
+
+</style>
+</head>
+<body>
+{% if data %}
+<center>
+<table>
+  <tr>
+    <td>Status</td>
+    <td>{{ data }}</td>
+  </tr>
+ {% endif %}
+ {% if data1 %}
+  <tr>
+    <td>Msg</td>
+    <td>{{ data1 }}</td>
+  </tr>
+{% endif %}
+</table>
+</center>
+</body>
+</html>
